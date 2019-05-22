@@ -18,7 +18,7 @@ connection.connect(function (err) {
 });
 
 function displayProducts() {
-    var query = "SELECT * FROM products"
+    var query = "SELECT * FROM products";
     connection.query(query, function (err, res) {
         if (err) throw err;
         dataPrint(res);
@@ -49,7 +49,7 @@ function displayProducts() {
                 updateProduct(id, quantity);
             }
         });
-    })
+    });
 }
 
 // function to log a table of the available products
